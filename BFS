@@ -1,4 +1,4 @@
-#BFS는 최단거리를 구할 때 쓰인다.
+#BFS는 최단거리를 구할 때 쓰인다. queue 
 
 from collections import deque
 
