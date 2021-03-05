@@ -1,0 +1,18 @@
+#BFS는 최단거리를 구할 때 쓰인다.
+
+from collections import deque
+
+visited=[False]*(n+1)
+
+def bfs(graph,start,visited):
+    queue=deque([start])
+    visited=[start]=True
+    while queue:
+        v=queue.popleft()
+        print(v,end=' ')
+        for i in graph[start]:
+            if not visited[i]:
+                queue.append[i]
+                visited[i]=True
+                
+                
