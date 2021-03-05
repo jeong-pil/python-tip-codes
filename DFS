@@ -1,0 +1,10 @@
+#DFS는 경우의 수를 구할 때 쓰인다. stack사용
+
+visited=[False]*(n+1)
+
+def dfs(graph,v,visited):
+    visited[v]=True
+    for i in graph[v]:
+        if not visited[i]:
+            dfs(graph,i,visited)
+
