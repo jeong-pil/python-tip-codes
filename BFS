@@ -12,7 +12,7 @@ def bfs(graph,start,visited):
         print(v,end=' ')
         for i in graph[start]:
             if not visited[i]:
-                queue.append[i]
+                queue.append(
                 visited[i]=True
                 
                 
