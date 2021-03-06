@@ -1,10 +1,10 @@
-#루트노드 찾기
+#특정원소가 속한 집합 찾기
 def find_parent(parent,x):
     if parent[x] != x:
         parent[x]=find_parent(parent,parent[x])
     return parent[x]
    
-#노드 
+#두 원소가 속한 집합을 
 def union_parent(parent,a,b):
     a=find_parent(parent,a)
     b=find_parent(parent,b)
