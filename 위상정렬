@@ -22,7 +22,8 @@ def topology_sort():
         now=q.popleft()
         result.append(now)
         for i in graph[now]:
-            indegree-=1
+            #i로 도착하는 간선 한개씩 제거
+            indegree[i]-=1
             if indegree[i]==0:
                 q.append(i)
     for i in result:
